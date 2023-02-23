@@ -1,0 +1,9 @@
+patient_id,age,gender,diagnosis,anatomic_site
+p-2,56,male,adenocarcinoma,kidney
+p-1,22,female,adenocarcinoma,LUNG
+p-4,49,female,glioblastoma,brain
+p-3,18,,Adenosquamous Carcinoma,left lung
+p-5,30,,Pseudosarcomatous carcinoma,lower lobe of right Lung
+p-7,70,female,adenocarcinoma,
+p-6,31,male,Urothelial carcinoma,bladder
+p-8,17,female,adenocarcinoma,LUNG
