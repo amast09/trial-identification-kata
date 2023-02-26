@@ -31,7 +31,7 @@ _Example:_
 Processing patient \<patient_id>, age \<age>, gender \<gender>, with diagnosis \<diagnosis>, for trial NCT03840902
 ```
 
-#### 3. When a patient is evaulated, they should be checked against each of the criterion defined for the trial.
+#### 3. When a patient is evaluated, they should be checked against each of the criterion defined for the trial.
 
 **Age** - Ensure that the patient's age falls within the defined range of the trial (e.g. greater than 18)
 
