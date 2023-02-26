@@ -181,7 +181,7 @@ class TrialEvaluatorTest extends FunSuite with ScalaCheckSuite {
   }
 
   property(
-    "AnatomicSiteCriterion.evaluate returns `InsufficentData` when the patient's anatomic site is missing"
+    "AnatomicSiteCriterion.evaluate returns `InsufficientData` when the patient's anatomic site is missing"
   ) {
     forAll(
       Generators.anatomicSiteGen,
