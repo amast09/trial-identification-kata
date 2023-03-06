@@ -131,10 +131,9 @@ class TrialEvaluatorTest extends FunSuite with ScalaCheckSuite {
     "DiagnosisCriterion.evaluate returns `Fail` when the patient does not contain one of the trial's diagnosis's"
   ) {
     forAll(
-      Generators.alphaStringGen,
       Generators.trialGen,
       Generators.patientGen
-    ) { (matchingDiagnosis: String, trial: Trial, patient: Patient) =>
+    ) { (trial: Trial, patient: Patient) =>
       assertEquals(
         DiagnosisCriterion.evaluate(
           trial.copy(diagnoses = NonEmptyList.one("Flu")),

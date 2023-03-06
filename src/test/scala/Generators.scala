@@ -55,9 +55,9 @@ object Generators {
     trial <- trialGen
     // Match up the anatomic site
     anatomicSite <- anatomicSiteGen
-    // Match the one of the trial diagnosis's
+    // Match up one of the trial diagnosis's with the patient diagnosis
     patientDiagnosis <- Gen.oneOf(trial.diagnoses.toList)
-    // Match the age if there is an age requirement
+    // Match the patient's age with the age requirement
     patientAge = trial.ageRequirement.age
     ageRequirement = trial.ageRequirement.copy(operator = Operator.==)
   } yield (

@@ -54,7 +54,7 @@ class AgeRequirementTest extends FunSuite with ScalaCheckSuite {
     }
   }
 
-  test("Operator.fromString returns the correct string") {
+  test("Operator.toString returns the correct string") {
     assertEquals(Operator.>.toString(), ">")
     assertEquals(Operator.>=.toString(), ">=")
     assertEquals(Operator.<.toString(), "<")
